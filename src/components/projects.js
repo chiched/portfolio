@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import projectsStyles from "./projects.module.css"
 
-export default () => (
+const ProjectList = () => (
   <StaticQuery
     query={graphql`
       query MyQuery {
@@ -17,10 +17,8 @@ export default () => (
         }
       }
     `}
-    render={data => (
-      <header>
-        <h1>{data.allMarkdownRemark.nodes.title}</h1>
-      </header>
-    )}
+    render={data => console.log(data)}
   />
 )
+
+export default ProjectList
