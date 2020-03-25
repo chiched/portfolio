@@ -15,5 +15,14 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Didot, OCR A Std"],
+          urls: ["/src/pages/mystyles.scss"],
+        },
+      },
+    },
   ],
 }

@@ -1,4 +1,42 @@
 @charset "utf-8";
 // If need, change your variables before importing Bulma
-$title-color: #ff0000;
+
+@font-face {
+  font-family: "Didot";
+  src: url("../styles/fonts/Didot-Bold.eot");
+  src: url("../styles/fonts/Didot-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../styles/fonts/Didot-Bold.woff2") format("woff2"),
+    url("../styles/fonts/Didot-Bold.ttf") format("truetype"),
+    url("../styles/fonts/Didot-Bold.svg#Didot-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OCR A Std";
+  src: url("../styles/fonts/OCRAStd.eot");
+  src: url("../styles/fonts/OCRAStd.eot?#iefix") format("embedded-opentype"),
+    url("../styles/fonts/OCRAStd.woff") format("woff"),
+    url("../styles/fonts/OCRAStd.woff2") format("woff2"),
+    url("../styles/fonts/OCRAStd.ttf") format("truetype"),
+    url("../styles/fonts/OCRAStd.svg#OCRAStd") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+$green: #41b883;
+$purple: #663398;
+$grey: #7d7d7d;
+$primary: $green;
+$family-primary: "Didot";
+$family-secondary: "OCR A Std";
+$size-1: 3.75rem;
+$size-2: 2.25rem;
+$size-3: 1.5rem;
+$size-4: 1.125rem;
+$size-5: 0.875rem;
+$size-6: 0.75rem;
+
+$progress-value-background-color: $purple;
+$progress-border-radius: 0px;
 @import "~bulma/bulma.sass";
