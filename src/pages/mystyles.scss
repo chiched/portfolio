@@ -39,4 +39,11 @@ $size-6: 0.75rem;
 
 $progress-value-background-color: $purple;
 $progress-border-radius: 0px;
+
+$hero-body-padding: 3rem 1.5rem;
+$hero-body-padding-medium: 7.3rem 1.5rem;
+
 @import "~bulma/bulma.sass";
+.hero-body {
+  background: url(../images/top-banner.jpg) top right transparent no-repeat;
+}
