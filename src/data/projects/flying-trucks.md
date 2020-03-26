@@ -1,6 +1,7 @@
 ---
 title: "Flying Trucks"
 tech: "react, nodeJS"
+type: "#test"
 ---
 
 This is a sample explanation. Blabla

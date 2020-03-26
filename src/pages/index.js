@@ -1,5 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+
 import "./mystyles.scss"
 
 const IndexPage = ({ data }) => {
@@ -53,27 +56,28 @@ const IndexPage = ({ data }) => {
       </section>
       <section class="section">
         <div class="container">
-          <h1 class="title is-2 has-text-primary">Skills</h1>
-          <div class="columns">
+          <h2 class="title is-2 has-text-primary">Skills</h2>
+          <div class="columns is-gapless">
             <div class="column">
-              <div class="content">
-                <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal">
-                  node.js
-                </h5>
-                <progress
-                  class="progress has-background-purple"
-                  value="90"
-                  max="100"
-                >
-                  90%
-                </progress>
-              </div>
+              <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal is-inline">
+                node.js
+              </h5>
+              <h5 class="is-size-4 has-text-info is-family-primary has-text-weight-bold is-inline float-right">
+                8/10
+              </h5>
+              <progress
+                class="progress is-medium has-background-purple"
+                value="90"
+                max="100"
+              >
+                90%
+              </progress>
               <div class="content">
                 <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal">
                   react
                 </h5>
                 <progress
-                  class="progress has-background-purple"
+                  class="progress  is-medium has-background-purple"
                   value="90"
                   max="100"
                 >
@@ -85,7 +89,7 @@ const IndexPage = ({ data }) => {
                   node.js
                 </h5>
                 <progress
-                  class="progress has-background-purple"
+                  class="progress  is-medium has-background-purple"
                   value="90"
                   max="100"
                 >
@@ -93,14 +97,14 @@ const IndexPage = ({ data }) => {
                 </progress>
               </div>
             </div>
-
+            <div class="column is-2"></div>
             <div class="column">
               <div class="content">
                 <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal">
                   css
                 </h5>
                 <progress
-                  class="progress has-background-purple"
+                  class="progress  is-medium has-background-purple"
                   value="90"
                   max="100"
                 >
@@ -112,7 +116,7 @@ const IndexPage = ({ data }) => {
                   nodeJS
                 </h5>
                 <progress
-                  class="progress has-background-purple"
+                  class="progress  is-medium has-background-purple"
                   value="90"
                   max="100"
                 >
@@ -124,7 +128,7 @@ const IndexPage = ({ data }) => {
                   nodeJS
                 </h5>
                 <progress
-                  class="progress has-background-purple"
+                  class="progress  is-medium has-background-purple"
                   value="90"
                   max="100"
                 >
@@ -137,27 +141,56 @@ const IndexPage = ({ data }) => {
       </section>
       <section class="section has-background-primary">
         <div class="container">
-          <h1 class="title">Work</h1>
-          <div class="columns">
-            <div class="column">
-              <div class="box"></div>
-              <div class="box"></div>
-            </div>
-            <div class="column">
-              <div class="box"></div>
-              <div class="box"></div>
-            </div>
+          <h2 class="title is-2 has-text-white">Work</h2>
+          <div class="columns is-multiline">
+            {data.allMarkdownRemark.nodes.map(node => (
+              <div key={node.id} class="column is-half">
+                <div class="box">
+                  <h6 class="title is-6 has-text-primary is-family-secondary has-text-weight-normal has-text-right">
+                    {node.frontmatter.type}
+                  </h6>
+                  <h3 class="title is-3 has-text-info">
+                    {node.frontmatter.title}
+                  </h3>
+                  <figure class="image is-2by1">
+                    <img src="https://bulma.io/images/placeholders/128x128.png" />
+                  </figure>
+                  <p class="title is-6 is-family-secondary has-text-grey has-text-weight-normal">
+                    {node.frontmatter.tech}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-      <footer class="footer"></footer>
-      <h1>Davids portfolio</h1>
-      {data.allMarkdownRemark.nodes.map(node => (
-        <div key={node.id}>
-          <h2>{node.frontmatter.title}</h2>
-          <h3>{node.frontmatter.tech}</h3>
+      <footer class="footer">
+        <h2 class="title is-2 has-text-primary">Contact</h2>
+        <div class="columns">
+          <div class="column is-family-secondary has-text-info is-size-4 ">
+            <p>hello_at_davidchiche.dev</p>
+          </div>
+          <div class="column has-text-right-tablet">
+            <span class="icon is-large" style={{ marginRight: "15px" }}>
+              <a
+                href="https://www.linkedin.com/in/davidchiche/"
+                target="_blank"
+              >
+                <i class="">
+                  <FontAwesomeIcon icon={faLinkedin} size="3x" />
+                </i>
+              </a>
+            </span>
+            <span class="icon is-large">
+              <a href="https://github.com/chiched" target="_blank">
+                <i class="">
+                  <FontAwesomeIcon icon={faGithub} size="3x" />
+                </i>
+              </a>
+            </span>
+          </div>
         </div>
-      ))}
+      </footer>
     </div>
   )
 }
@@ -166,6 +199,7 @@ export const query = graphql`
     allMarkdownRemark {
       nodes {
         frontmatter {
+          type
           title
           tech
         }
