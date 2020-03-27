@@ -68,74 +68,105 @@ const IndexPage = ({ data }) => {
               </h5>
               <progress
                 class="progress is-medium has-background-purple"
+                value="80"
+                max="100"
+              >
+                80%
+              </progress>
+              <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal is-inline">
+                javascript
+              </h5>
+              <h5 class="is-size-4 has-text-info is-family-primary has-text-weight-bold is-inline float-right">
+                8/10
+              </h5>
+              <progress
+                class="progress is-medium has-background-purple"
+                value="80"
+                max="100"
+              >
+                80%
+              </progress>
+              <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal is-inline">
+                react
+              </h5>
+              <h5 class="is-size-4 has-text-info is-family-primary has-text-weight-bold is-inline float-right">
+                8/10
+              </h5>
+              <progress
+                class="progress is-medium has-background-purple"
+                value="80"
+                max="100"
+              >
+                80%
+              </progress>
+              <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal is-inline">
+                vue
+              </h5>
+              <h5 class="is-size-4 has-text-info is-family-primary has-text-weight-bold is-inline float-right">
+                7/10
+              </h5>
+              <progress
+                class="progress is-medium has-background-purple"
+                value="70"
+                max="100"
+              >
+                70%
+              </progress>
+            </div>
+            <div class="column is-2"></div>
+            <div class="column">
+              <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal is-inline">
+                html
+              </h5>
+              <h5 class="is-size-4 has-text-info is-family-primary has-text-weight-bold is-inline float-right">
+                10/10
+              </h5>
+              <progress
+                class="progress is-medium has-background-purple"
+                value="100"
+                max="100"
+              >
+                100%
+              </progress>
+              <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal is-inline">
+                css
+              </h5>
+              <h5 class="is-size-4 has-text-info is-family-primary has-text-weight-bold is-inline float-right">
+                9/10
+              </h5>
+              <progress
+                class="progress is-medium has-background-purple"
                 value="90"
                 max="100"
               >
                 90%
               </progress>
-              <div class="content">
-                <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal">
-                  react
-                </h5>
-                <progress
-                  class="progress  is-medium has-background-purple"
-                  value="90"
-                  max="100"
-                >
-                  90%
-                </progress>
-              </div>{" "}
-              <div class="content">
-                <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal">
-                  node.js
-                </h5>
-                <progress
-                  class="progress  is-medium has-background-purple"
-                  value="90"
-                  max="100"
-                >
-                  90%
-                </progress>
-              </div>
-            </div>
-            <div class="column is-2"></div>
-            <div class="column">
-              <div class="content">
-                <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal">
-                  css
-                </h5>
-                <progress
-                  class="progress  is-medium has-background-purple"
-                  value="90"
-                  max="100"
-                >
-                  90%
-                </progress>
-              </div>
-              <div class="content">
-                <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal">
-                  nodeJS
-                </h5>
-                <progress
-                  class="progress  is-medium has-background-purple"
-                  value="90"
-                  max="100"
-                >
-                  90%
-                </progress>
-              </div>{" "}
-              <div class="content">
-                <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal">
-                  nodeJS
-                </h5>
-                <progress
-                  class="progress  is-medium has-background-purple"
-                  value="90"
-                  max="100"
-                >
-                  90%
-                </progress>
-              </div>
+              <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal is-inline">
+                jquery
+              </h5>
+              <h5 class="is-size-4 has-text-info is-family-primary has-text-weight-bold is-inline float-right">
+                8/10
+              </h5>
+              <progress
+                class="progress is-medium has-background-purple"
+                value="80"
+                max="100"
+              >
+                80%
+              </progress>
+              <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal is-inline">
+                express
+              </h5>
+              <h5 class="is-size-4 has-text-info is-family-primary has-text-weight-bold is-inline float-right">
+                7/10
+              </h5>
+              <progress
+                class="progress is-medium has-background-purple"
+                value="70"
+                max="100"
+              >
+                70%
+              </progress>
             </div>
           </div>
         </div>

@@ -52,7 +52,7 @@ $box-shadow: none;
 
 $section-padding: 5rem 6rem !default;
 
-$column-gap: 3rem;
+$column-gap: 1.5rem;
 @import "~bulma/bulma.sass";
 
 .hero-body {
@@ -66,4 +66,7 @@ h5.float-right {
 }
 figure {
   margin-bottom: 1.25rem;
+}
+.progress {
+  margin-bottom: 2rem !important;
 }
