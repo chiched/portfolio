@@ -153,7 +153,7 @@ const IndexPage = ({ data }) => {
                     {node.frontmatter.title}
                   </h3>
                   <figure class="image is-2by1">
-                    <img src="https://bulma.io/images/placeholders/128x128.png" />
+                    <img src="https://picsum.photos/400/200" />
                   </figure>
                   <p class="title is-6 is-family-secondary has-text-grey has-text-weight-normal">
                     {node.frontmatter.tech}
@@ -164,7 +164,7 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       </section>
-      <footer class="footer">
+      <div class="section">
         <h2 class="title is-2 has-text-primary">Contact</h2>
         <div class="columns">
           <div class="column is-family-secondary has-text-info is-size-4 ">
@@ -190,7 +190,7 @@ const IndexPage = ({ data }) => {
             </span>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
   )
 }
