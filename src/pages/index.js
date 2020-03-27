@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 
@@ -146,14 +147,14 @@ const IndexPage = ({ data }) => {
             {data.allMarkdownRemark.nodes.map(node => (
               <div key={node.id} class="column is-half">
                 <div class="box">
-                  <h6 class="title is-6 has-text-primary is-family-secondary has-text-weight-normal has-text-right">
+                  <h6 class="is-size-6 has-text-primary is-family-secondary has-text-weight-normal has-text-right">
                     {node.frontmatter.type}
                   </h6>
                   <h3 class="title is-3 has-text-info">
                     {node.frontmatter.title}
                   </h3>
-                  <figure class="image is-2by1">
-                    <img src="https://picsum.photos/400/200" />
+                  <figure>
+                    <Img fluid={node.frontmatter.image.childImageSharp.fluid} />
                   </figure>
                   <p class="title is-6 is-family-secondary has-text-grey has-text-weight-normal">
                     {node.frontmatter.tech}
@@ -202,6 +203,24 @@ export const query = graphql`
           type
           title
           tech
+          image {
+            childImageSharp {
+              fluid {
+                base64
+                tracedSVG
+                srcWebp
+                srcSetWebp
+                originalImg
+                originalName
+                presentationWidth
+                presentationHeight
+                srcSet
+                src
+                sizes
+                aspectRatio
+              }
+            }
+          }
         }
         id
       }
