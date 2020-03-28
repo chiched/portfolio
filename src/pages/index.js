@@ -41,11 +41,17 @@ const IndexPage = ({ data }) => {
             <span aria-hidden="true"></span>
           </a>
         </div>
-        <div class="navbar-menu">
+        <div class="navbar-menu has-text-centered">
           <div class="navbar-end">
-            <a class="navbar-item is-size-5 has-text-primary">skills</a>
-            <a class="navbar-item is-size-5 has-text-primary">work</a>
-            <a class="navbar-item is-size-5 has-text-primary">contact</a>
+            <a class="navbar-item is-size-5 has-text-primary" href="#skills">
+              skills
+            </a>
+            <a class="navbar-item is-size-5 has-text-primary" href="#work">
+              work
+            </a>
+            <a class="navbar-item is-size-5 has-text-primary" href="#contact">
+              contact
+            </a>
           </div>
         </div>
       </nav>
@@ -64,7 +70,9 @@ const IndexPage = ({ data }) => {
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="title is-2 has-text-primary">Skills</h2>
+          <h2 id="skills" class="title is-2 has-text-primary">
+            Skills
+          </h2>
           <div class="columns is-gapless">
             <div class="column">
               <h5 class="is-size-4 has-text-grey is-family-secondary has-text-weight-normal is-inline">
@@ -180,7 +188,9 @@ const IndexPage = ({ data }) => {
       </section>
       <section class="section has-background-primary">
         <div class="container">
-          <h2 class="title is-2 has-text-white">Work</h2>
+          <h2 id="work" class="title is-2 has-text-white">
+            Work
+          </h2>
           <div class="columns is-multiline">
             {data.allMarkdownRemark.nodes.map(node => (
               <div key={node.id} class="column is-half">
@@ -204,7 +214,9 @@ const IndexPage = ({ data }) => {
         </div>
       </section>
       <div class="section">
-        <h2 class="title is-2 has-text-primary">Contact</h2>
+        <h2 id="contact" class="title is-2 has-text-primary">
+          Contact
+        </h2>
         <div class="columns">
           <div class="column is-family-secondary has-text-info is-size-4 ">
             <p>hello_at_davidchiche.dev</p>
