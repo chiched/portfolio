@@ -9,6 +9,13 @@ import "./mystyles.scss"
 
 const IndexPage = ({ data }) => {
   console.log(data)
+  function testFunction() {
+    var menu = document.getElementsByClassName("navbar-menu")[0]
+    var burger = document.getElementsByClassName("navbar-burger")[0]
+    menu.classList.toggle("is-active")
+    burger.classList.toggle("is-active")
+  }
+
   return (
     <div>
       <nav
@@ -19,7 +26,7 @@ const IndexPage = ({ data }) => {
         <div class="navbar-brand">
           <div class="navbar-item is-size-5 has-text-primary">
             <FontAwesomeIcon icon={faMapMarkerAlt} size="" />
-            tokyo
+            Tokyo
           </div>
           <a
             role="button"
@@ -27,6 +34,7 @@ const IndexPage = ({ data }) => {
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
+            onClick={testFunction}
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
