@@ -202,7 +202,10 @@ const IndexPage = ({ data }) => {
                     {node.frontmatter.title}
                   </h3>
                   <figure>
-                    <Img fluid={node.frontmatter.image.childImageSharp.fluid} />
+                    <Img
+                      fluid={node.frontmatter.image.childImageSharp.fluid}
+                      loading="eager"
+                    />
                   </figure>
                   <p class="title is-6 is-family-secondary has-text-grey has-text-weight-normal">
                     {node.frontmatter.tech}

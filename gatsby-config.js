@@ -26,5 +26,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "David Chiche",
+        short_name: "David Chiche",
+        icon: "src/images/favicon.png", // This path is relative to the root of the site.
+      },
+    },
   ],
 }
