@@ -73,3 +73,13 @@ figure {
 .hero-body {
   height: 315px;
 }
+.hero-body .container {
+  max-width: 600px;
+  float: right;
+  margin: 0 3em;
+}
+@media screen and (max-width: 768px) {
+  .hero-body .container {
+    margin: 0 2em;
+  }
+}

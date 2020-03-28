@@ -39,19 +39,16 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       </nav>
-      <section class="hero is-small is-primary">
+      <section class="hero is-primary">
         <div class="hero-body">
-          <div class="columns">
-            <div class="column"></div>
-            <div class="column is-half">
-              <h1 class="title is-1 has-text-grey">
-                Hi, I'm <strong>David Chiche</strong>
-              </h1>
-              <h2 class="subtitle is-3 has-text-grey is-family-secondary">
-                A fullstack developer and project manager with a head full of
-                ideas
-              </h2>
-            </div>
+          <div class="container">
+            <h1 class="title is-1 has-text-grey">
+              Hi, I'm <strong class="has-text-primary">David Chiche</strong>
+            </h1>
+            <h2 class="subtitle is-3 has-text-grey is-family-secondary">
+              A fullstack developer and project manager with a head full of
+              ideas
+            </h2>
           </div>
         </div>
       </section>
