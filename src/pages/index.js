@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 
 import "./mystyles.scss"
 
@@ -17,7 +18,8 @@ const IndexPage = ({ data }) => {
       >
         <div class="navbar-brand">
           <div class="navbar-item is-size-5 has-text-primary">
-            Davids portfolio
+            <FontAwesomeIcon icon={faMapMarkerAlt} size="" />
+            tokyo
           </div>
           <a
             role="button"
