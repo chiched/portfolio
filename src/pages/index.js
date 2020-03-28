@@ -39,8 +39,8 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       </nav>
-      <section class="hero is-medium">
-        <div class="hero-body has-background-primary">
+      <section class="hero is-small is-primary">
+        <div class="hero-body">
           <div class="columns">
             <div class="column"></div>
             <div class="column is-half">
