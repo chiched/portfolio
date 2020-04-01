@@ -1,6 +1,7 @@
 ---
 type: "#project"
 title: "Learn the terminal"
-tech: "Vue"
-image: "flying-trucks.jpg"
+tech: "vue vuex node.js"
+image: "learn-the-terminal.png"
+url: "https://learn-terminal.herokuapp.com"
 ---
