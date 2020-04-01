@@ -8,7 +8,6 @@ import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 import "./mystyles.scss"
 
 const IndexPage = ({ data }) => {
-  console.log(data)
   function testFunction() {
     var menu = document.getElementsByClassName("navbar-menu")[0]
     var burger = document.getElementsByClassName("navbar-burger")[0]
@@ -83,7 +82,7 @@ const IndexPage = ({ data }) => {
               </h5>
               <progress
                 class="progress is-medium has-background-purple"
-                value="80"
+                value="0"
                 max="100"
               >
                 80%
@@ -96,7 +95,7 @@ const IndexPage = ({ data }) => {
               </h5>
               <progress
                 class="progress is-medium has-background-purple"
-                value="80"
+                value="0"
                 max="100"
               >
                 80%
@@ -194,23 +193,25 @@ const IndexPage = ({ data }) => {
           <div class="columns is-multiline">
             {data.allMarkdownRemark.nodes.map(node => (
               <div key={node.id} class="column is-half">
-                <div class="box">
-                  <h6 class="is-size-6 has-text-primary is-family-secondary has-text-weight-normal has-text-right">
-                    {node.frontmatter.type}
-                  </h6>
-                  <h3 class="title is-3 has-text-info">
-                    {node.frontmatter.title}
-                  </h3>
-                  <figure>
-                    <Img
-                      fluid={node.frontmatter.image.childImageSharp.fluid}
-                      loading="eager"
-                    />
-                  </figure>
-                  <p class="title is-6 is-family-secondary has-text-grey has-text-weight-normal">
-                    {node.frontmatter.tech}
-                  </p>
-                </div>
+                <a href={node.frontmatter.url} target="_blank">
+                  <div class="box">
+                    <h6 class="is-size-6 has-text-primary is-family-secondary has-text-weight-normal has-text-right">
+                      {node.frontmatter.type}
+                    </h6>
+                    <h3 class="title is-3 has-text-info">
+                      {node.frontmatter.title}
+                    </h3>
+                    <figure>
+                      <Img
+                        fluid={node.frontmatter.image.childImageSharp.fluid}
+                        loading="eager"
+                      />
+                    </figure>
+                    <p class="title is-6 is-family-secondary has-text-grey has-text-weight-normal">
+                      {node.frontmatter.tech}
+                    </p>
+                  </div>
+                </a>
               </div>
             ))}
           </div>
@@ -256,6 +257,7 @@ export const query = graphql`
           type
           title
           tech
+          url
           image {
             childImageSharp {
               fluid {
