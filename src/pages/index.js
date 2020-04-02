@@ -82,7 +82,7 @@ const IndexPage = ({ data }) => {
               </h5>
               <progress
                 class="progress is-medium has-background-purple"
-                value="0"
+                value="80"
                 max="100"
               >
                 80%
@@ -95,7 +95,7 @@ const IndexPage = ({ data }) => {
               </h5>
               <progress
                 class="progress is-medium has-background-purple"
-                value="0"
+                value="80"
                 max="100"
               >
                 80%
@@ -185,6 +185,7 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       </section>
+
       <section class="section has-background-primary">
         <div class="container">
           <h2 id="work" class="title is-2 has-text-white">
