@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
         />
         <meta
           property="og:image"
-          content="https://davidchiche.dev/static/og-image.jpg"
+          content="https://davidchiche.dev/og-image.jpg"
         />
       </Helmet>
       <nav
