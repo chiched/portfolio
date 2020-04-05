@@ -58,7 +58,8 @@ const IndexPage = ({ data }) => {
         <div class="hero-body">
           <div class="container">
             <h1 class="title is-1 has-text-grey">
-              Hi, I'm <strong class="has-text-primary">David Chiche</strong>
+              Hi, I'm <br class="is-hidden-tablet" />
+              <strong class="has-text-primary">David Chiche</strong>
             </h1>
             <h2 class="subtitle is-3 has-text-grey is-family-secondary">
               A fullstack developer and project manager with a head full of

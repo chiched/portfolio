@@ -82,6 +82,18 @@ figure {
   .hero-body .container {
     margin: 0 2em;
   }
+  .section {
+    padding: 5em 2em;
+  }
+  .title.is-1 {
+    font-size: 2.8rem;
+  }
+  .subtitle.is-3 {
+    font-size: 1.1rem;
+  }
+  .title:not(.is-spaced) + .subtitle {
+    margin-top: 0px;
+  }
 }
 .fa-map-marker-alt {
   margin-right: 5px;
