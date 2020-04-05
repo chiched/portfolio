@@ -225,7 +225,7 @@ const IndexPage = ({ data }) => {
         </h2>
         <div class="columns">
           <div class="column is-family-secondary has-text-info is-size-4 ">
-            <p>hello_at_davidchiche.dev</p>
+            <p class="email">hello_at_davidchiche.dev</p>
           </div>
           <div class="column has-text-right-tablet">
             <span class="icon is-large" style={{ marginRight: "15px" }}>
