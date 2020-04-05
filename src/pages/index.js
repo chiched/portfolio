@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
+import { Helmet } from "react-helmet"
 
 import "./mystyles.scss"
 
@@ -17,6 +18,19 @@ const IndexPage = ({ data }) => {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>David Chiche</title>
+        <meta property="og:title" content="David Chiche" />
+        <meta
+          property="og:description"
+          content="This is the portfolio website of David Chiche"
+        />
+        <meta
+          property="og:image"
+          content="https://davidchiche.dev/static/og-image.jpg"
+        />
+      </Helmet>
       <nav
         class="navbar is-family-secondary"
         role="navigation"
