@@ -1,7 +1,7 @@
 ---
 type: "#project"
 title: "Smart Mirror"
-tech: "Vue VueX nodeJS MongoDB"
+tech: "vue vuex node.js mongodb"
 image: "smart-mirror.jpg"
 url: "https://github.com/chiched/reflectra"
 ---
