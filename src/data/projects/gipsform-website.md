@@ -2,7 +2,7 @@
 title: "Gipsform"
 tech: "design ui"
 type: "#website"
-url: ""
+url: "gipsform-website-full.jpg"
 image: "gipsform-website.jpg"
 ---
 

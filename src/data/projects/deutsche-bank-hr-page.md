@@ -2,7 +2,7 @@
 title: "Deutsche Bank HR"
 tech: "design ui html css js"
 type: "#website"
-url: ""
+url: "/deutsche-bank-hr-page-full.jpg"
 image: "deutsche-bank-hr-page.jpg"
 ---
 
