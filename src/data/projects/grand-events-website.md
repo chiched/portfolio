@@ -2,7 +2,7 @@
 title: "Grand Events"
 tech: "drupal html css js design"
 type: "#website"
-url: "http://slow-wine.net"
+url: "https://www.grandevents.be"
 image: "grand-events-website.jpg"
 ---
 
