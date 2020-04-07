@@ -68,14 +68,17 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       </nav>
-      <section class="hero is-primary">
+      <section class="hero is-primary is-404">
         <div class="hero-body">
           <div class="container">
             <h1 class="title is-1 has-text-grey">
-              This page could <br class="is-hidden-tablet" />
+              This page could <br />
               <strong class="has-text-primary">not </strong>
-              be found.
+              be found :(
             </h1>
+            <h5 class=" is-family-secondary has-text-primary is-size-4">
+              <a href="/">Go back to the homepage</a>
+            </h5>
           </div>
         </div>
       </section>

@@ -83,6 +83,10 @@ figure {
   .hero-body .container {
     margin: 0em;
   }
+  .is-404 .hero-body .container {
+    width: 100%;
+    text-align: center;
+  }
   .section {
     padding: 5em 2em;
   }
