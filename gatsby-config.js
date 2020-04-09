@@ -7,6 +7,12 @@
 module.exports = {
   pathPrefix: "/portfolio",
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-163237266-1",
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
