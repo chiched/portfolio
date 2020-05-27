@@ -267,7 +267,9 @@ const IndexPage = ({ data }) => {
 }
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: frontmatter___image___birthTime }
+    ) {
       nodes {
         frontmatter {
           type
@@ -276,7 +278,7 @@ export const query = graphql`
           url
           image {
             childImageSharp {
-              fluid {
+              fluid(quality: 100) {
                 base64
                 tracedSVG
                 srcWebp
