@@ -1,7 +1,7 @@
 ---
 title: "Expense Manager"
 tech: "react node express mongodb"
-type: "#app"
+type: "#web-app"
 url: "https://dchiche-expense-manager.herokuapp.com"
 image: "expense-manager.png"
 ---
