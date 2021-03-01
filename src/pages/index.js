@@ -39,7 +39,7 @@ const IndexPage = ({ data }) => {
         <div class="navbar-brand">
           <div class="navbar-item is-size-5 has-text-primary">
             <FontAwesomeIcon icon={faMapMarkerAlt} size="" />
-            Tokyo
+            Geneva
           </div>
           <a
             role="button"
